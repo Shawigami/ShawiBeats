@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Lien pourcharger les differents fichier CSS necessaires-->
+        <link rel="stylesheet" href="CSS/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap/bootstrap4-modal-fullscreen.min.css">
+        <link rel="stylesheet" href="CSS/fontawesome/css/all.css">
+        <link rel="stylesheet" href="CSS/design.css">
+        <!-- Lien pour metre un icone au site web-->
+        <link rel="icon" href="CSS/pictures/canon_eos.ico" />
+
+        <!-- titre du site internet-->
+        <title>Rudy Art Wall</title>
+    </head>
+
+    <body class="container-fluid" id="default">
+        <header class="row" id="entete">
+            <div class="col-4 px-0 text-center d-none d-sm-block" id="logoSite">
+                <img class="img-fluid" src="CSS/pictures/canon_eos.ico" alt="logo" id="logo">
+            </div>
+            <div class="col-12 col-sm-8 px-0 d-flex justify-content-center align-items-center" >
+                <h1 id="nomSite" class="display-1"> Rudy Art Wall</h1>
+            </div>
+            <div class="col-sm-12" id="menu">
+                <nav class="navbar navbar-expand-md nav-pills p-0">
+                    <div class="d-flex justify-content-around m-0 p-0">
+                        <div class="nav-link pl-0 py-0">
+                            <a class="nav-link p-1" href="index.html"><i class="fas fa-home fa-lg"></i></a>
+                        </div>
+                        <div class="dropup nav-link pl-0 py-0" id="colorTheme">
+                            <a class="nav-link dropdown-toggle p-1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-paint-brush fa-flip-both"></i></a>
+                            <div class="dropdown-menu dropdown-menu-left px-1 py-0" aria-labelledby="navbarDropdownMenuLink" id="dropdownMenuStyle">
+                                <p class="d-inline p-1" data-color="black"><i id="blackTheme" class="fas fa-fill-drip fa-lg"></i></p>
+                                <p class="d-inline p-1" data-color="grey"><i id="greyTheme" class="fas fa-fill-drip fa-lg"></i></p>
+                                <p class="d-inline p-1" data-color="white"><i id="whiteTheme" class="fas fa-fill-drip fa-lg"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler nav-link p-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="nav-link p-1"><i class="fas fa-angle-double-down"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <div class="container-fluid p-0 m-0">
+                            <ul class="navbar-nav col-12 d-flex p-0 justify-content-around">
+                                <li class="nav-item nav-link flex-fill">
+                                    <a class="nav-link p-1 d-flex justify-content-center align-items-center" href="photographe.html"><i class="far fa-address-card fa-lg"></i><span> Photographe </span></a>
+                                </li>
+                                <li class="nav-item nav-link flex-fill">
+                                    <a class="nav-link p-1 d-flex justify-content-center align-items-center" href="categories.html"><i class="far fa-images fa-lg"></i><span> Catégories </span></a>
+                                </li>
+                                <li class="nav-item nav-link flex-fill">
+                                    <a class="nav-link p-1 d-flex justify-content-center align-items-center" href="techniques.html"><i class="fas fa-film fa-lg"></i><span> Techniques </span></a>
+                                </li>
+                                <li class="nav-item nav-link flex-fill">
+                                    <a class="nav-link p-1 d-flex justify-content-center align-items-center" href="connexion.html"><i class="fas fa-fingerprint fa-lg"></i><span> Connexion </span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="row overflow-auto" id="corps">
+            <div class="col-sm-8">
+               
+               
+               <!-- lorsque le l'utilsateur click sur une catégorie ou une technique mais n'a pas choisi de photo faire une interface d'acceuil de la catégorie ou de la technique basé sur la présentation du photographe en reprenant la description longue et l'image de la technique ou de la catégore isssue de la bdd (logo)
+               
+               
+               <!-- Si Image sélectionné dans le carousel attention a la route  -->
+               
+                <!-- Button trigger modal -->
+                <img src="https://lorempixel.com/1920/1080/" class="img-fluid" alt="Responsive image" type="button" data-toggle="modal" data-target="#imagebigger">
+
+                <!-- Modal -->
+                <div class="modal fade modal-fullscreen" id="imagebigger" tabindex="-1" role="dialog" aria-labelledby="imagebiggerlabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body p-0 m-0">
+                                <img src="https://lorempixel.com/1920/1080/" class="img-fluid" alt="Responsive image" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+               <!-- Info de l'image  -->
+                <p>
+                    Titre de l'image.
+                </p>
+                <p>
+                    EXIF .
+                </p>
+                <p>
+                    reprendre les infos exif travaillé pendant la formation
+                </p>
+
+
+            </div>
+        </main>
+        <footer class="row" id="pied">
+            https://kenwheeler.github.io/slick/
+
+            pour vous aider a creer le carousel de 5 images de largeur pc 3 en tablette et 1 en smartphone 
+
+
+        </footer>
+        <!-- Lien pour charger les différents scripts necessaires-->
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/monScriptJquery.js"></script>
+    </body>
+</html>
